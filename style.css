@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(204, 43%, 93%);
+}
+main{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
+    overflow: hidden;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.mian-contier{
+    padding: 30px;
+}
+h1{
+    font-size: 25px;
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+h2{
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 10px;
+}
+.main-p{
+    color: hsl(204, 43%, 60%);
+    max-width: 35rem;
+    font-weight: 400;
+    line-height: 25px;
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: hsl(179, 62%, 45%);
+}
+.left{
+    padding: 30px;
+    background-color: hsl(179, 62%, 43%);
+}
+.left-pay-container{
+    display: flex;
+    align-items: center;
+}
+.left h4{
+    margin-bottom: 20px;
+}
+.left-pay-container h3{
+    font-size: 25px;
+    margin-right: 10px;
+}
+.left-pay-container span{
+    opacity: .5;
+    font-weight: 400;
+}
+.left p{
+    margin-top: 10px;
+}
+button{
+    margin-top: 30px;
+    padding: 15px;
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+    background-color: hsl(71, 73%, 54%);
+    cursor: pointer;
+    color:hsl(0, 0%, 100%);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.right{
+    padding: 30px;
+}
+.right h4{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.right p {
+    max-width: 12.8rem;
+    opacity: .8;
+    font-weight: 400;
+    line-height: 20px;
+}
+@media (max-width:620px) {
+    body{
+        padding: 20px;
+        height: 120vh;
+        overflow: scroll;
+    }
+    section{
+        grid-template-columns: 1fr;
+    }
+    .right p{
+        max-width: none;
+    }
+}   
